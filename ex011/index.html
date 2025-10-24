@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML%</title>
+</head>
+<body>
+    <h1>Imgaem dinâmica</h1>
+
+    <p>Abra este site em vários dispositivos ou aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source srcset="/imagens/foto-p.png" media="(max-width: 725px)" type="image/png">
+        <source srcset="/imagens/foto-m.png" media="(max-width: 1050px)" type="image/png">
+        <img src="imagens/foto-g.png" alt="flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+
+    <p>
+        Vamos reproduzir um áudio!
+    </p>
+    
+    <audio preload="metadata" controls>
+        <source src="midia/gimme-five.mp3" type="audio/mpeg">
+        <source src="midia/gimme-five.ogg" type="audio/ogg">
+        <source src="midia/gimme-five.wav" type="audio/wav">
+        <p>
+            Infelizmente seu navegador não tem suporte para reproduzir o áduio. <a href="midia/gimme-five.mp3">Clique aqui</a> para baixá-lo!
+        </p>
+    </audio>
+
+
+        <!-- <p>
+            Infelizmente seu navegador não tem suporte para reproduzir o áudiio. <a href="midia/gimme-five.mp3" download="/midia/gimme-five.mp3" target="_blank">Clique aqui</a> para baixá-lo!
+        </p> -->
+
+        
+        <h1>inserindo vídeo hospedado localmente</h1>
+
+        <p>
+            Este vídeo está hospedado no meu próprio servidor.
+        </p>
+
+        <video controls width="1000">
+            <source src="midia-video/meu-video-em-ogv.ogv" type="video/ogv">
+            <source src="midia-video/meu-video-em-webm.webm" type="video/webm">
+            <source src="midia-video/meu-video-em-mp4.mp4" type="video/mp4">
+        </video>
+
+        <h1>inserindo vídeo incorporado do YouTube</h1>
+
+        <iframe width="1000" height="500" src="https://www.youtube.com/embed/jtEVLeeEpcQ?si=VLVdnMnQUylZ4ivg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
